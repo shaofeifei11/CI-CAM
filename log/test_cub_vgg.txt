@@ -1,0 +1,17 @@
+pretrained weight load complete..
+
+
+########################################################################
+model_path:  trained_weights/net_train_vgg16_cub_100.pth
+model_args:  dataset_cub_inpSize_304_cropSize_224_attenSize_14_backbone_vgg16_backbone_rate_0.1_func_quadratic_meanNum_20_dEpo_2_dRate_0.5_lr_0.0005_segThr_0.0_epoch_100
+
+# seg_thr = 0.0   function =  quadratic  mean_num =  20
+/home/sff/anaconda3/envs/py37/lib/python3.7/site-packages/torch/nn/functional.py:3063: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  "See the documentation of nn.Upsample for details.".format(mode))
+Inference Results: 
+classification top 1 accuracy:  0.7568173973075596
+classification top 5 accuracy:  0.9226786330686918
+localization top 1 accuracy:  0.5840524680704177
+localization top 5 accuracy:  0.7071108042802899
+gt localization accuracy:  0.7576803589920608
+执行时间：  184.9199995994568
