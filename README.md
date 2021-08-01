@@ -1,6 +1,7 @@
 # CI-CAM
 
 This project is the code of "Improving Weakly-supervised Object Localization \\ via Causal Intervention" that has been accepted as a full research paper for presentation at the ACM Multimedia 2021 conference.
+![avatar](network_architecture.pdf)
 
 # cub vgg16 train
 python -u train2.py --gpu 3 --backbone vgg16 --danet 1 --backbone_rate 0.1 --function quadratic --decay_epoch 14 --decay_rate 0.5 --dataset cub --epoch 100 --batch_size 6 --non_local 1 --shared_classifier 1 --combination 1 --input_size 304 --seg_thr 0.0 --lr 0.0005 --decay 1 --attention 1 --pretrain 1 >> log/train_cub_vgg.txt 2>&1
