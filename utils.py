@@ -125,6 +125,8 @@ def poly_lr_scheduler(optimizer, init_lr, iter, lr_decay_iter=1, max_iter=100, p
         :param power is a polymomial power
     """
     lr = init_lr*(1 - iter/max_iter)**power
+    if cfg.args.backbone == "inceptionV3" and iter >= 85:
+        lr = lr * 0.1
     for param_group in optimizer.param_groups:
         param_group['lr'] = lr
     if dataset == "imagenet":
